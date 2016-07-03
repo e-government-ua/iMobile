@@ -9,6 +9,7 @@
 
 import Alamofire
 import SwiftyJSON
+import MagicalRecord
 
 class Networking
 {
@@ -20,7 +21,8 @@ class Networking
                     let json = JSON(value)
                     if let categories = json.array {
                         if let aCompletion = completion {
-                            aCompletion(Category.parse(categories))
+                            let context = NSManagedObjectContext.MR_contextWithParent(NSManagedObjectContext.MR_defaultContext())
+                            aCompletion(Category.parse(context, jsonArray:categories))
                         }
                     }
                 }

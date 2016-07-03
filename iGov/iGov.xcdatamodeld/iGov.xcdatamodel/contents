@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
-    <entity name="Test" representedClassName="Test" syncable="YES">
-        <attribute name="test" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="nID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Subcategory" inverseName="category" inverseEntity="Subcategory" syncable="YES"/>
+    </entity>
+    <entity name="Service" representedClassName="Service" syncable="YES">
+        <attribute name="nID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nID_Status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nOpenedLimit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sSubjectOperatorName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subcategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Subcategory" inverseName="services" inverseEntity="Subcategory" syncable="YES"/>
+    </entity>
+    <entity name="Subcategory" representedClassName="Subcategory" syncable="YES">
+        <attribute name="nID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="subcategories" inverseEntity="Category" syncable="YES"/>
+        <relationship name="services" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Service" inverseName="subcategory" inverseEntity="Service" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Test" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Category" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Subcategory" positionX="-54" positionY="27" width="128" height="135"/>
+        <element name="Service" positionX="-36" positionY="54" width="128" height="180"/>
     </elements>
 </model>
