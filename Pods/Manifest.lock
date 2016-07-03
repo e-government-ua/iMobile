@@ -1,15 +1,20 @@
 PODS:
   - Alamofire (3.4.1)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire
+  - MagicalRecord
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 28b4d75fc476e8dc34366755eaa2dbc389b78810
+PODFILE CHECKSUM: 3f0c483e6c7ecccad850af94743ac5463e0793cd
 
 COCOAPODS: 1.0.1

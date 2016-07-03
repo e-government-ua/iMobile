@@ -13,8 +13,8 @@
 		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
 		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
 		960A99441D290F8000972C18 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99431D290F8000972C18 /* Networking.swift */; };
-
 		960A99461D29274700972C18 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99451D29274700972C18 /* Service.swift */; };
+		969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */; };
 		B27A42E01D29281700AD1AFE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A42DF1D29281700AD1AFE /* Category.swift */; };
 		B27A42E21D29282200AD1AFE /* Subcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A42E11D29282200AD1AFE /* Subcategory.swift */; };
 		C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */; };
@@ -33,9 +33,9 @@
 		960A993B1D290E7F00972C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960A99431D290F8000972C18 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		960A99451D29274700972C18 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		969F1DDF1D2945AC006B6700 /* iGov.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iGov.xcdatamodel; sourceTree = "<group>"; };
 		B27A42DF1D29281700AD1AFE /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B27A42E11D29282200AD1AFE /* Subcategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subcategory.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,8 @@
 		960A992E1D290E7F00972C18 /* iGov */ = {
 			isa = PBXGroup;
 			children = (
+				969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */,
+				969F1DE11D2945B6006B6700 /* Model */,
 				960A992F1D290E7F00972C18 /* AppDelegate.swift */,
 				960A99311D290E7F00972C18 /* ViewController.swift */,
 				960A99331D290E7F00972C18 /* Main.storyboard */,
@@ -100,6 +102,13 @@
 				B27A42E11D29282200AD1AFE /* Subcategory.swift */,
 			);
 			path = iGov;
+			sourceTree = "<group>";
+		};
+		969F1DE11D2945B6006B6700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +124,7 @@
 				960A992A1D290E7F00972C18 /* Resources */,
 				CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */,
 				45668B2DC8329F423172E45F /* [CP] Copy Pods Resources */,
+				969F1DDD1D294598006B6700 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -187,6 +197,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGov/Pods-iGov-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		969F1DDD1D294598006B6700 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m iGov/iGov.xcdatamodeld -O iGov/Model --swift --template-var arc=true";
+		};
 		CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +250,7 @@
 				960A99441D290F8000972C18 /* Networking.swift in Sources */,
 				960A99461D29274700972C18 /* Service.swift in Sources */,
 				B27A42E21D29282200AD1AFE /* Subcategory.swift in Sources */,
+				969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */,
 				960A99321D290E7F00972C18 /* ViewController.swift in Sources */,
 				960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */,
 				B27A42E01D29281700AD1AFE /* Category.swift in Sources */,
@@ -384,6 +408,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				969F1DDF1D2945AC006B6700 /* iGov.xcdatamodel */,
+			);
+			currentVersion = 969F1DDF1D2945AC006B6700 /* iGov.xcdatamodel */;
+			path = iGov.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 960A99241D290E7F00972C18 /* Project object */;
 }
