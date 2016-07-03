@@ -32,9 +32,9 @@ class Networking
                     print("The todo is: " + json.description)
                     if let categories = json.array {
                         if let category = categories[0].dictionary {
-                            if let subcategory = category["aSubcategory"]?.array {
-                                if let subSubcategoryDists = subcategory[0].dictionary  {
-                                    if let servicesArray = subSubcategoryDists["aService"]?.array {
+                            if let subcategories = category["aSubcategory"]?.array {
+                                if let subcategory = subcategories[0].dictionary  {
+                                    if let servicesArray = subcategory["aService"]?.array {
                                         for service in servicesArray {
                                             print("olollo service!")
                                             print(service)
