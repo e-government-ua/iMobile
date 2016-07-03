@@ -13,7 +13,10 @@
 		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
 		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
 		960A99441D290F8000972C18 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99431D290F8000972C18 /* Networking.swift */; };
+
 		960A99461D29274700972C18 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99451D29274700972C18 /* Service.swift */; };
+		B27A42E01D29281700AD1AFE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A42DF1D29281700AD1AFE /* Category.swift */; };
+		B27A42E21D29282200AD1AFE /* Subcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A42E11D29282200AD1AFE /* Subcategory.swift */; };
 		C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		960A993B1D290E7F00972C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960A99431D290F8000972C18 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		960A99451D29274700972C18 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B27A42DF1D29281700AD1AFE /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B27A42E11D29282200AD1AFE /* Subcategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subcategory.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,8 @@
 				960A993B1D290E7F00972C18 /* Info.plist */,
 				960A99431D290F8000972C18 /* Networking.swift */,
 				960A99451D29274700972C18 /* Service.swift */,
+				B27A42DF1D29281700AD1AFE /* Category.swift */,
+				B27A42E11D29282200AD1AFE /* Subcategory.swift */,
 			);
 			path = iGov;
 			sourceTree = "<group>";
@@ -218,8 +226,10 @@
 			files = (
 				960A99441D290F8000972C18 /* Networking.swift in Sources */,
 				960A99461D29274700972C18 /* Service.swift in Sources */,
+				B27A42E21D29282200AD1AFE /* Subcategory.swift in Sources */,
 				960A99321D290E7F00972C18 /* ViewController.swift in Sources */,
 				960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */,
+				B27A42E01D29281700AD1AFE /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
