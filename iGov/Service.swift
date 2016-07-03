@@ -6,49 +6,50 @@
 //  Copyright © 2016 iGov. All rights reserved.
 //
 
-import Foundation
 import SwiftyJSON
 
-/*
- 
- "nOpenedLimit": 0
- "sSubjectOperatorName": "Міністерство внутрішніх справ"
- "openedLimit": 0
- "subjectOperatorName": "Міністерство внутрішніх справ"
- "nID": 1
- "sName": "Надання довідки про притягнення до кримінальної відповідальності, відсутність (наявність) судимості або обмежень, передбачених кримінально-процесуальним законодавством України"
- "nOrder": 1
- "nSub": 3
- "nID_Status": 0
- "nStatus": 2
- */
-
 class Service {
-    var nOpenedLimit: Int?
-    var sSubjectOperatorName: String?
-    var nID: Int?
-    var sName: String?
-    var nOrder: Int?
-    var nID_Status: Int?
-    var nStatus: Int?
-    init(){
+    var nOpenedLimit: Int
+    var sSubjectOperatorName: String
+    var nID: Int
+    var sName: String
+    var nOrder: Int
+    var nID_Status: Int
+    var nStatus: Int
+    
+    init(nOpenedLimit:Int, sSubjectOperatorName: String, nID: Int, sName: String, nOrder: Int, nID_Status: Int, nStatus:Int)
+    {
+        self.nOpenedLimit = nOpenedLimit
+        self.sSubjectOperatorName = sSubjectOperatorName
+        self.nID = nID
+        self.sName = sName
+        self.nOrder = nOrder
+        self.nID_Status = nID_Status
+        self.nStatus = nStatus
     }
     
-    class func parse(services: JSON?) {
-        if let servicesArray = services?.array{
-            for serviceJSON in servicesArray {
-                if let serviceDict = serviceJSON.dictionary {
-                    let service: Service = Service()
-                    service.nOpenedLimit = serviceDict["nOpenedLimit"]?.int
-                    service.sSubjectOperatorName = serviceDict["sSubjectOperatorName"]?.string
-                    service.nID = serviceDict["nID"]?.int
-                    service.sName = serviceDict["sName"]?.string
-                    service.nOrder = serviceDict["nOrder"]?.int
-                    service.nID_Status = serviceDict["nID_Status"]?.int
-                    service.nStatus = serviceDict["nStatus"]?.int
+    class func parse(jsonArray: [JSON]) -> [Service] {
+        
+        var resultArray = [Service]()
+        
+        for element in jsonArray {
+            if let serviceDict = element.dictionary {
+                guard
+                    let nOpenedLimit = serviceDict["nOpenedLimit"]?.int,
+                    let sSubjectOperatorName = serviceDict["sSubjectOperatorName"]?.string,
+                    let nID = serviceDict["nID"]?.int,
+                    let sName = serviceDict["sName"]?.string,
+                    let nOrder = serviceDict["nOrder"]?.int,
+                    let nID_Status = serviceDict["nID_Status"]?.int,
+                    let nStatus = serviceDict["nStatus"]?.int 
+                else {
+                    continue
                 }
+                let service = Service(nOpenedLimit: nOpenedLimit, sSubjectOperatorName: sSubjectOperatorName,
+                                      nID: nID, sName: sName, nOrder: nOrder, nID_Status: nID_Status, nStatus: nStatus)
+                resultArray.append(service)
             }
         }
-        
+        return resultArray
     }
 }

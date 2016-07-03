@@ -8,5 +8,6 @@ target 'iGov' do
   # Pods for iGov
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'MagicalRecord'
 
 end

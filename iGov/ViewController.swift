@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Networking.sharedInstance.getListOfServices()
+        Networking.sharedInstance.getListOfServices { (categories: [Category]) in
+            print (categories)
+        }
     }
 
 }

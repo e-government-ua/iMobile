@@ -6,56 +6,42 @@
 //  Copyright © 2016 iGov. All rights reserved.
 //
 
-import Foundation
 import SwiftyJSON
 
 class Subcategory {
-    
     var nID: Int
     var sName: String
     var sID: String
     var nOrder: Int
+    var aService: [Service]
     
-    //TODO: must changed from [String]? (optional) to [Service] (not optional)
-    var aService: [String]?
-    
-    init(nID: Int, sName: String, sID: String, nOrder: Int) {
+    init(nID: Int, sName: String, sID: String, nOrder: Int, aService: [Service]) {
         self.nID = nID
         self.sName = sName
         self.sID = sID
         self.nOrder = nOrder
+        self.aService = aService
     }
     
-    class func getSubcategories(jsonArray: [JSON]) -> [Subcategory] {
+    class func parse(jsonArray: [JSON]) -> [Subcategory] {
         var resultArray = [Subcategory]()
         
         for element in jsonArray {
-            if let newSubcategory = element.dictionary {
-                guard let nID = newSubcategory["nID"]?.int,
-                    let sName = newSubcategory["sName"]?.string,
-                    let sID = newSubcategory["sID"]?.string,
-                    let nOrder = newSubcategory["nOrder"]?.int else {
-                        continue
+            if let subcategoryDict = element.dictionary {
+                guard
+                    let nID = subcategoryDict["nID"]?.int,
+                    let sName = subcategoryDict["sName"]?.string,
+                    let sID = subcategoryDict["sID"]?.string,
+                    let nOrder = subcategoryDict["nOrder"]?.int,
+                    let subcategories = subcategoryDict["aSubcategory"]?.array
+                else {
+                    continue
                 }
-                let newSubcategory = Subcategory(nID: nID, sName: sName, sID: sID, nOrder: nOrder)
+                
+                let newSubcategory = Subcategory(nID: nID, sName: sName, sID: sID, nOrder: nOrder, aService: Service.parse(subcategories))
                 resultArray.append(newSubcategory)
             }
         }
         return resultArray
     }
 }
-
-//{
-//    "nID": 3
-//    "sName": "Поліція"
-//    "sID": "Police"
-//    "nOrder": 1
-//    "aService": [...106]-
-//}
-//{
-//    "nID": 22
-//    "sName": "Соціальна допомога"
-//    "sID": "SocHelp"
-//    "nOrder": 2
-//    "aService": [...55]-
-//}
