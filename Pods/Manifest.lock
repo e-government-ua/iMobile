@@ -6,15 +6,25 @@ PODS:
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `swift2.3`)
   - MagicalRecord
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: swift2.3
+    :git: https://github.com/Alamofire/Alamofire.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 394674717d798627520c7de9cd7855de513c3370
+    :git: https://github.com/Alamofire/Alamofire.git
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 3f0c483e6c7ecccad850af94743ac5463e0793cd
+PODFILE CHECKSUM: c0afee0e70bdc58b695c8aa1598f40d9a8865b47
 
 COCOAPODS: 1.0.1
