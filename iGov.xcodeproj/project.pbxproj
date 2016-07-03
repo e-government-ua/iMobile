@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A992F1D290E7F00972C18 /* AppDelegate.swift */; };
+		960A99321D290E7F00972C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99311D290E7F00972C18 /* ViewController.swift */; };
+		960A99351D290E7F00972C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99331D290E7F00972C18 /* Main.storyboard */; };
+		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
+		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
+		960A99441D290F8000972C18 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99431D290F8000972C18 /* Networking.swift */; };
+		C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.debug.xcconfig"; sourceTree = "<group>"; };
+		3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iGov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.release.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.release.xcconfig"; sourceTree = "<group>"; };
+		960A992C1D290E7F00972C18 /* iGov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGov.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		960A992F1D290E7F00972C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		960A99311D290E7F00972C18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		960A99341D290E7F00972C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		960A99361D290E7F00972C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		960A99391D290E7F00972C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		960A993B1D290E7F00972C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960A99431D290F8000972C18 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		960A99291D290E7F00972C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A8905CBFF31703C3096F326 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */,
+				872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92A7AE8B1E8BE0F2A6690B9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		960A99231D290E7F00972C18 = {
+			isa = PBXGroup;
+			children = (
+				960A992E1D290E7F00972C18 /* iGov */,
+				960A992D1D290E7F00972C18 /* Products */,
+				2A8905CBFF31703C3096F326 /* Pods */,
+				92A7AE8B1E8BE0F2A6690B9C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		960A992D1D290E7F00972C18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				960A992C1D290E7F00972C18 /* iGov.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		960A992E1D290E7F00972C18 /* iGov */ = {
+			isa = PBXGroup;
+			children = (
+				960A992F1D290E7F00972C18 /* AppDelegate.swift */,
+				960A99311D290E7F00972C18 /* ViewController.swift */,
+				960A99331D290E7F00972C18 /* Main.storyboard */,
+				960A99361D290E7F00972C18 /* Assets.xcassets */,
+				960A99381D290E7F00972C18 /* LaunchScreen.storyboard */,
+				960A993B1D290E7F00972C18 /* Info.plist */,
+				960A99431D290F8000972C18 /* Networking.swift */,
+			);
+			path = iGov;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960A992B1D290E7F00972C18 /* iGov */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960A993E1D290E7F00972C18 /* Build configuration list for PBXNativeTarget "iGov" */;
+			buildPhases = (
+				CEA6C1F9D44C97EABD18C655 /* [CP] Check Pods Manifest.lock */,
+				960A99281D290E7F00972C18 /* Sources */,
+				960A99291D290E7F00972C18 /* Frameworks */,
+				960A992A1D290E7F00972C18 /* Resources */,
+				CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */,
+				45668B2DC8329F423172E45F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iGov;
+			productName = iGov;
+			productReference = 960A992C1D290E7F00972C18 /* iGov.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		960A99241D290E7F00972C18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = iGov;
+				TargetAttributes = {
+					960A992B1D290E7F00972C18 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 960A99271D290E7F00972C18 /* Build configuration list for PBXProject "iGov" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 960A99231D290E7F00972C18;
+			productRefGroup = 960A992D1D290E7F00972C18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				960A992B1D290E7F00972C18 /* iGov */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		960A992A1D290E7F00972C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */,
+				960A99371D290E7F00972C18 /* Assets.xcassets in Resources */,
+				960A99351D290E7F00972C18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45668B2DC8329F423172E45F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGov/Pods-iGov-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGov/Pods-iGov-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA6C1F9D44C97EABD18C655 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		960A99281D290E7F00972C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960A99441D290F8000972C18 /* Networking.swift in Sources */,
+				960A99321D290E7F00972C18 /* ViewController.swift in Sources */,
+				960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		960A99331D290E7F00972C18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960A99341D290E7F00972C18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		960A99381D290E7F00972C18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960A99391D290E7F00972C18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		960A993C1D290E7F00972C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		960A993D1D290E7F00972C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		960A993F1D290E7F00972C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iGov/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.org.iGov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		960A99401D290E7F00972C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iGov/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.org.iGov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		960A99271D290E7F00972C18 /* Build configuration list for PBXProject "iGov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960A993C1D290E7F00972C18 /* Debug */,
+				960A993D1D290E7F00972C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960A993E1D290E7F00972C18 /* Build configuration list for PBXNativeTarget "iGov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960A993F1D290E7F00972C18 /* Debug */,
+				960A99401D290E7F00972C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 960A99241D290E7F00972C18 /* Project object */;
+}
