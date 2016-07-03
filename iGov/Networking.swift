@@ -34,13 +34,7 @@ class Networking
                         if let category = categories[0].dictionary {
                             if let subcategories = category["aSubcategory"]?.array {
                                 if let subcategory = subcategories[0].dictionary  {
-                                    if let servicesArray = subcategory["aService"]?.array {
-                                        for service in servicesArray {
-                                            print("olollo service!")
-                                            print(service)
-                                            
-                                        }
-                                    }
+                                    let services = Service.parse(subcategory["aService"])
                                 }
                             }
                         }
