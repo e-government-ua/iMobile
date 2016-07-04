@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A992F1D290E7F00972C18 /* AppDelegate.swift */; };
-		960A99321D290E7F00972C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99311D290E7F00972C18 /* ViewController.swift */; };
 		960A99351D290E7F00972C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99331D290E7F00972C18 /* Main.storyboard */; };
 		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
 		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,9 @@
 		969F1DF31D294D2A006B6700 /* _Subcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DF01D294D2A006B6700 /* _Subcategory.swift */; };
 		969F1DF61D295C27006B6700 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DF51D295C27006B6700 /* Service.swift */; };
 		969F1DF81D295C2D006B6700 /* _Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DF71D295C2D006B6700 /* _Service.swift */; };
+		B223CEB51D2980FF00436C0D /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B223CEB41D2980FF00436C0D /* CategoryTableViewController.swift */; };
+		B223CEB71D29810B00436C0D /* SubcategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B223CEB61D29810B00436C0D /* SubcategoryTableViewController.swift */; };
+		B223CEB91D29811D00436C0D /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B223CEB81D29811D00436C0D /* ServiceTableViewController.swift */; };
 		C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +31,6 @@
 		872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.release.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.release.xcconfig"; sourceTree = "<group>"; };
 		960A992C1D290E7F00972C18 /* iGov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960A992F1D290E7F00972C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		960A99311D290E7F00972C18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		960A99341D290E7F00972C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		960A99361D290E7F00972C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960A99391D290E7F00972C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +43,9 @@
 		969F1DF01D294D2A006B6700 /* _Subcategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Subcategory.swift; sourceTree = "<group>"; };
 		969F1DF51D295C27006B6700 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		969F1DF71D295C2D006B6700 /* _Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Service.swift; sourceTree = "<group>"; };
+		B223CEB41D2980FF00436C0D /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		B223CEB61D29810B00436C0D /* SubcategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubcategoryTableViewController.swift; sourceTree = "<group>"; };
+		B223CEB81D29811D00436C0D /* ServiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,9 @@
 				969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */,
 				969F1DE11D2945B6006B6700 /* Model */,
 				960A992F1D290E7F00972C18 /* AppDelegate.swift */,
-				960A99311D290E7F00972C18 /* ViewController.swift */,
+				B223CEB41D2980FF00436C0D /* CategoryTableViewController.swift */,
+				B223CEB61D29810B00436C0D /* SubcategoryTableViewController.swift */,
+				B223CEB81D29811D00436C0D /* ServiceTableViewController.swift */,
 				960A99331D290E7F00972C18 /* Main.storyboard */,
 				960A99361D290E7F00972C18 /* Assets.xcassets */,
 				960A99381D290E7F00972C18 /* LaunchScreen.storyboard */,
@@ -266,9 +272,11 @@
 			files = (
 				960A99441D290F8000972C18 /* Networking.swift in Sources */,
 				969F1DEC1D294CBB006B6700 /* Subcategory.swift in Sources */,
+				B223CEB71D29810B00436C0D /* SubcategoryTableViewController.swift in Sources */,
 				969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */,
 				969F1DF31D294D2A006B6700 /* _Subcategory.swift in Sources */,
-				960A99321D290E7F00972C18 /* ViewController.swift in Sources */,
+				B223CEB91D29811D00436C0D /* ServiceTableViewController.swift in Sources */,
+				B223CEB51D2980FF00436C0D /* CategoryTableViewController.swift in Sources */,
 				969F1DF81D295C2D006B6700 /* _Service.swift in Sources */,
 				960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */,
 				969F1DF61D295C27006B6700 /* Service.swift in Sources */,
