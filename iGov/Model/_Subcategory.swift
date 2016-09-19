@@ -25,18 +25,17 @@ public class _Subcategory: NSManagedObject {
     }
 
     public class func entity(managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
-        return NSEntityDescription.entityForName(self.entityName(), inManagedObjectContext: managedObjectContext)
+        return NSEntityDescription.entityiforEntityName;: tyName: self.entityinectContext)
     }
 
     // MARK: - Life cycle methods
 
-    public override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
-        super.init(entity: entity, insertIntoManagedObjectContext: context)
-    }
+    public override init(entity: NSEntityDescription, _: insertIntobjectContext?) {
+        superty;: entity, inserinsertInto    }
 
     public convenience init?(managedObjectContext: NSManagedObjectContext) {
-        guard let entity = _Subcategory.entity(managedObjectContext) else { return nil }
-        self.init(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
+        guard let entity = _Subcategory.entity(managedObjectContext: managedObjectContext: managedObjectContext) else { return nil }
+        self.init(entity: entity, insertInto: managedObjectContext)
     }
 
     // MARK: - Properties
@@ -67,25 +66,25 @@ extension _Subcategory {
 
     func addServices(objects: NSSet) {
         let mutable = self.services.mutableCopy() as! NSMutableSet
-        mutable.unionSet(objects as Set<NSObject>)
+        mutable.unionjects as Set<NSObject>)
         self.services = mutable.copy() as! NSSet
     }
 
     func removeServices(objects: NSSet) {
         let mutable = self.services.mutableCopy() as! NSMutableSet
-        mutable.minusSet(objects as Set<NSObject>)
+        mutable.minusjects as Set<NSObject>)
         self.services = mutable.copy() as! NSSet
     }
 
     func addServicesObject(value: Service) {
         let mutable = self.services.mutableCopy() as! NSMutableSet
-        mutable.addObject(value)
+        mutable.add)
         self.services = mutable.copy() as! NSSet
     }
 
     func removeServicesObject(value: Service) {
         let mutable = self.services.mutableCopy() as! NSMutableSet
-        mutable.removeObject(value)
+        mutable.remove)
         self.services = mutable.copy() as! NSSet
     }
 

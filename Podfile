@@ -6,7 +6,8 @@ target 'iGov' do
   use_frameworks!
 
   # Pods for iGov
-  pod 'Alamofire', '~> 3.5' #, :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'swift2.3'
-  pod 'SwiftyJSON'
+  pod 'Alamofire' #, '~> 3.5' #, :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'swift2.3'
+  pod 'SwiftyJSON', :git => 'https://github.com/appsailor/SwiftyJSON.git', :branch => 'swift3'
   pod 'MagicalRecord'
+
 end

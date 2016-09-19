@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,13 +13,13 @@
 		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
 		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
 		960A99441D290F8000972C18 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99431D290F8000972C18 /* Networking.swift */; };
+		96330C441D9000AC008ECEE4 /* Service+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C3E1D9000AC008ECEE4 /* Service+CoreDataClass.swift */; };
+		96330C451D9000AC008ECEE4 /* Service+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C3F1D9000AC008ECEE4 /* Service+CoreDataProperties.swift */; };
+		96330C461D9000AC008ECEE4 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C401D9000AC008ECEE4 /* Category+CoreDataClass.swift */; };
+		96330C471D9000AC008ECEE4 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C411D9000AC008ECEE4 /* Category+CoreDataProperties.swift */; };
+		96330C481D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C421D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift */; };
+		96330C491D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C431D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift */; };
 		969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */; };
-		969F1DEB1D294CBB006B6700 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DE81D294CBB006B6700 /* Category.swift */; };
-		969F1DEC1D294CBB006B6700 /* Subcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DE91D294CBB006B6700 /* Subcategory.swift */; };
-		969F1DF21D294D2A006B6700 /* _Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DEF1D294D2A006B6700 /* _Category.swift */; };
-		969F1DF31D294D2A006B6700 /* _Subcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DF01D294D2A006B6700 /* _Subcategory.swift */; };
-		969F1DF61D295C27006B6700 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DF51D295C27006B6700 /* Service.swift */; };
-		969F1DF81D295C2D006B6700 /* _Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DF71D295C2D006B6700 /* _Service.swift */; };
 		C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,13 +35,13 @@
 		960A99391D290E7F00972C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		960A993B1D290E7F00972C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960A99431D290F8000972C18 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		96330C3E1D9000AC008ECEE4 /* Service+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+CoreDataClass.swift"; sourceTree = "<group>"; };
+		96330C3F1D9000AC008ECEE4 /* Service+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96330C401D9000AC008ECEE4 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		96330C411D9000AC008ECEE4 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96330C421D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Subcategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		96330C431D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Subcategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		969F1DDF1D2945AC006B6700 /* iGov.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iGov.xcdatamodel; sourceTree = "<group>"; };
-		969F1DE81D294CBB006B6700 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		969F1DE91D294CBB006B6700 /* Subcategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subcategory.swift; sourceTree = "<group>"; };
-		969F1DEF1D294D2A006B6700 /* _Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Category.swift; sourceTree = "<group>"; };
-		969F1DF01D294D2A006B6700 /* _Subcategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Subcategory.swift; sourceTree = "<group>"; };
-		969F1DF51D295C27006B6700 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		969F1DF71D295C2D006B6700 /* _Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 		960A992E1D290E7F00972C18 /* iGov */ = {
 			isa = PBXGroup;
 			children = (
+				96330C001D8FFF80008ECEE4 /* Model */,
 				969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */,
-				969F1DE11D2945B6006B6700 /* Model */,
 				960A992F1D290E7F00972C18 /* AppDelegate.swift */,
 				960A99311D290E7F00972C18 /* ViewController.swift */,
 				960A99331D290E7F00972C18 /* Main.storyboard */,
@@ -107,25 +107,17 @@
 			path = iGov;
 			sourceTree = "<group>";
 		};
-		969F1DE11D2945B6006B6700 /* Model */ = {
+		96330C001D8FFF80008ECEE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				969F1DEE1D294D1E006B6700 /* Generated */,
-				969F1DE81D294CBB006B6700 /* Category.swift */,
-				969F1DF51D295C27006B6700 /* Service.swift */,
-				969F1DE91D294CBB006B6700 /* Subcategory.swift */,
+				96330C3E1D9000AC008ECEE4 /* Service+CoreDataClass.swift */,
+				96330C3F1D9000AC008ECEE4 /* Service+CoreDataProperties.swift */,
+				96330C401D9000AC008ECEE4 /* Category+CoreDataClass.swift */,
+				96330C411D9000AC008ECEE4 /* Category+CoreDataProperties.swift */,
+				96330C421D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift */,
+				96330C431D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		969F1DEE1D294D1E006B6700 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				969F1DEF1D294D2A006B6700 /* _Category.swift */,
-				969F1DF71D295C2D006B6700 /* _Service.swift */,
-				969F1DF01D294D2A006B6700 /* _Subcategory.swift */,
-			);
-			name = Generated;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +128,6 @@
 			buildConfigurationList = 960A993E1D290E7F00972C18 /* Build configuration list for PBXNativeTarget "iGov" */;
 			buildPhases = (
 				CEA6C1F9D44C97EABD18C655 /* [CP] Check Pods Manifest.lock */,
-				969F1DDD1D294598006B6700 /* ShellScript */,
 				960A99281D290E7F00972C18 /* Sources */,
 				960A99291D290E7F00972C18 /* Frameworks */,
 				960A992A1D290E7F00972C18 /* Resources */,
@@ -164,11 +155,12 @@
 				TargetAttributes = {
 					960A992B1D290E7F00972C18 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
 			buildConfigurationList = 960A99271D290E7F00972C18 /* Build configuration list for PBXProject "iGov" */;
-			compatibilityVersion = "Xcode 6.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -214,19 +206,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGov/Pods-iGov-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		969F1DDD1D294598006B6700 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "mogenerator -m iGov/iGov.xcdatamodeld -O iGov/Model --swift --template-var arc=true";
-		};
 		CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,15 +244,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				960A99441D290F8000972C18 /* Networking.swift in Sources */,
-				969F1DEC1D294CBB006B6700 /* Subcategory.swift in Sources */,
 				969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */,
-				969F1DF31D294D2A006B6700 /* _Subcategory.swift in Sources */,
+				96330C481D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */,
+				96330C461D9000AC008ECEE4 /* Category+CoreDataClass.swift in Sources */,
+				96330C441D9000AC008ECEE4 /* Service+CoreDataClass.swift in Sources */,
+				96330C451D9000AC008ECEE4 /* Service+CoreDataProperties.swift in Sources */,
+				96330C471D9000AC008ECEE4 /* Category+CoreDataProperties.swift in Sources */,
 				960A99321D290E7F00972C18 /* ViewController.swift in Sources */,
-				969F1DF81D295C2D006B6700 /* _Service.swift in Sources */,
 				960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */,
-				969F1DF61D295C27006B6700 /* Service.swift in Sources */,
-				969F1DF21D294D2A006B6700 /* _Category.swift in Sources */,
-				969F1DEB1D294CBB006B6700 /* Category.swift in Sources */,
+				96330C491D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,8 +292,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -359,8 +340,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -388,13 +371,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iGov/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.org.iGov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -402,14 +387,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iGov/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.org.iGov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

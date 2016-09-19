@@ -1,19 +1,27 @@
+//
+//  Subcategory+CoreDataClass.swift
+//  iGov
+//
+//  Created by Yurii Kolesnykov on 19.09.16.
+//  Copyright © 2016 iGov. All rights reserved.
+//
+
 import Foundation
-import SwiftyJSON
 import CoreData
-import MagicalRecord
+import SwiftyJSON
 
 @objc(Subcategory)
-public class Subcategory: _Subcategory {
-    class func create(context: NSManagedObjectContext, category: Category, nID: Int, sName: String, sID: String, nOrder: Int, aService: [JSON]) ->Subcategory?
+public class Subcategory: NSManagedObject {
+    
+    class func create(_ context: NSManagedObjectContext, category: Category, nID: Int, sName: String, sID: String, nOrder: Int, aService: [JSON]) ->Subcategory?
     {
-        if let subcategory = Subcategory.MR_createEntityInContext(context) {
-            subcategory.nID = nID
+        if let subcategory = Subcategory.mr_createEntity(in: context) {
+            subcategory.nID = nID as NSNumber?
             subcategory.sName = sName
             subcategory.sID = sID
-            subcategory.nOrder = nOrder
+            subcategory.nOrder = nOrder as NSNumber?
             subcategory.category = category
-            subcategory.addServices(NSSet(array: Service.parse(context, subcategory: subcategory, jsonArray: aService)))
+            subcategory.addToServices(NSSet(array: Service.parse(context, subcategory: subcategory, jsonArray: aService)))
             return subcategory
         }
         else {
@@ -21,7 +29,7 @@ public class Subcategory: _Subcategory {
         }
     }
     
-    class func parse(context: NSManagedObjectContext, category: Category, jsonArray: [JSON]) -> [Subcategory] {
+    class func parse(_ context: NSManagedObjectContext, category: Category, jsonArray: [JSON]) -> [Subcategory] {
         var resultArray = [Subcategory]()
         
         for element in jsonArray {
@@ -43,4 +51,5 @@ public class Subcategory: _Subcategory {
         }
         return resultArray
     }
-	}
+
+}

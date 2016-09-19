@@ -1,18 +1,28 @@
-import SwiftyJSON
+//
+//  Service+CoreDataClass.swift
+//  iGov
+//
+//  Created by Yurii Kolesnykov on 19.09.16.
+//  Copyright © 2016 iGov. All rights reserved.
+//
+
+import Foundation
 import CoreData
+import SwiftyJSON
 
 @objc(Service)
-public class Service: _Service {
-    class func create(context: NSManagedObjectContext, subcategory: Subcategory, nOpenedLimit:Int, sSubjectOperatorName: String, nID: Int, sName: String, nOrder: Int, nID_Status: Int, nStatus:Int) ->Service?
+public class Service: NSManagedObject {
+    
+    class func create(_ context: NSManagedObjectContext, subcategory: Subcategory, nOpenedLimit:Int, sSubjectOperatorName: String, nID: Int, sName: String, nOrder: Int, nID_Status: Int, nStatus:Int) ->Service?
     {
-        if let service = Service.MR_createEntityInContext(context) {
-            service.nOpenedLimit = nOpenedLimit
+        if let service = Service.mr_createEntity(in: context) {
+            service.nOpenedLimit = nOpenedLimit as NSNumber?
             service.sSubjectOperatorName = sSubjectOperatorName
-            service.nID = nID
+            service.nID = nID as NSNumber?
             service.sName = sName
-            service.nOrder = nOrder
-            service.nID_Status = nID_Status
-            service.nStatus = nStatus
+            service.nOrder = nOrder as NSNumber?
+            service.nID_Status = nID_Status as NSNumber?
+            service.nStatus = nStatus as NSNumber?
             service.subcategory = subcategory
             return service
         }
@@ -22,7 +32,7 @@ public class Service: _Service {
     }
     
     
-    class func parse(context: NSManagedObjectContext, subcategory: Subcategory, jsonArray: [JSON]) -> [Service] {
+    class func parse(_ context: NSManagedObjectContext, subcategory: Subcategory, jsonArray: [JSON]) -> [Service] {
         
         var resultArray = [Service]()
         
@@ -40,10 +50,11 @@ public class Service: _Service {
                         continue
                 }
                 if let service = Service.create(context, subcategory: subcategory, nOpenedLimit: nOpenedLimit, sSubjectOperatorName: sSubjectOperatorName,                                         nID: nID, sName: sName, nOrder: nOrder, nID_Status: nID_Status, nStatus: nStatus) {
-                resultArray.append(service)
-            }
+                    resultArray.append(service)
+                }
             }
         }
         return resultArray
     }
+
 }

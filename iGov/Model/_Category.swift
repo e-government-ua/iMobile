@@ -24,18 +24,18 @@ public class _Category: NSManagedObject {
     }
 
     public class func entity(managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
-        return NSEntityDescription.entityForName(self.entityName(), inManagedObjectContext: managedObjectContext)
+        return NSEntityDescription.entity(forEntityName: self.entityName(), in: managedObjectContext)
     }
 
     // MARK: - Life cycle methods
 
-    public override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
-        super.init(entity: entity, insertIntoManagedObjectContext: context)
+    public override init(entity: NSEntityDescription, _: insertIntobjectContext?) {
+        super(entity: entity, insertInto: context)
     }
 
     public convenience init?(managedObjectContext: NSManagedObjectContext) {
-        guard let entity = _Category.entity(managedObjectContext) else { return nil }
-        self.init(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
+        guard let entity = _Category.entity(managedObjectContext: managedObjectContext) else { return nil }
+        self.type(of: init)(entity: entity, insertInto: managedObjectContext)
     }
 
     // MARK: - Properties
@@ -63,25 +63,25 @@ extension _Category {
 
     func addSubcategories(objects: NSSet) {
         let mutable = self.subcategories.mutableCopy() as! NSMutableSet
-        mutable.unionSet(objects as Set<NSObject>)
+        mutable.union(objects as Set<NSObject>)
         self.subcategories = mutable.copy() as! NSSet
     }
 
     func removeSubcategories(objects: NSSet) {
         let mutable = self.subcategories.mutableCopy() as! NSMutableSet
-        mutable.minusSet(objects as Set<NSObject>)
+        mutable.minus(objects as Set<NSObject>)
         self.subcategories = mutable.copy() as! NSSet
     }
 
     func addSubcategoriesObject(value: Subcategory) {
         let mutable = self.subcategories.mutableCopy() as! NSMutableSet
-        mutable.addObject(value)
+        mutable.add(value)
         self.subcategories = mutable.copy() as! NSSet
     }
 
     func removeSubcategoriesObject(value: Subcategory) {
         let mutable = self.subcategories.mutableCopy() as! NSMutableSet
-        mutable.removeObject(value)
+        mutable.remove(value)
         self.subcategories = mutable.copy() as! NSSet
     }
 
