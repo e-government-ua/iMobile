@@ -13,12 +13,12 @@
 		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
 		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
 		960A99441D290F8000972C18 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99431D290F8000972C18 /* Networking.swift */; };
-		96330C441D9000AC008ECEE4 /* Service+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C3E1D9000AC008ECEE4 /* Service+CoreDataClass.swift */; };
-		96330C451D9000AC008ECEE4 /* Service+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C3F1D9000AC008ECEE4 /* Service+CoreDataProperties.swift */; };
-		96330C461D9000AC008ECEE4 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C401D9000AC008ECEE4 /* Category+CoreDataClass.swift */; };
-		96330C471D9000AC008ECEE4 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C411D9000AC008ECEE4 /* Category+CoreDataProperties.swift */; };
-		96330C481D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C421D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift */; };
-		96330C491D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C431D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift */; };
+		96330C521D907BB1008ECEE4 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C4B1D907BB1008ECEE4 /* Category+CoreDataClass.swift */; };
+		96330C531D907BB1008ECEE4 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C4C1D907BB1008ECEE4 /* Category+CoreDataProperties.swift */; };
+		96330C541D907BB1008ECEE4 /* Service+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C4D1D907BB1008ECEE4 /* Service+CoreDataClass.swift */; };
+		96330C551D907BB1008ECEE4 /* Service+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C4E1D907BB1008ECEE4 /* Service+CoreDataProperties.swift */; };
+		96330C561D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C4F1D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift */; };
+		96330C571D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C501D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift */; };
 		969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */; };
 		C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */; };
 /* End PBXBuildFile section */
@@ -35,12 +35,12 @@
 		960A99391D290E7F00972C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		960A993B1D290E7F00972C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960A99431D290F8000972C18 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		96330C3E1D9000AC008ECEE4 /* Service+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+CoreDataClass.swift"; sourceTree = "<group>"; };
-		96330C3F1D9000AC008ECEE4 /* Service+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		96330C401D9000AC008ECEE4 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
-		96330C411D9000AC008ECEE4 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		96330C421D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Subcategory+CoreDataClass.swift"; sourceTree = "<group>"; };
-		96330C431D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Subcategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96330C4B1D907BB1008ECEE4 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataClass.swift"; path = "Model/Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		96330C4C1D907BB1008ECEE4 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataProperties.swift"; path = "Model/Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96330C4D1D907BB1008ECEE4 /* Service+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Service+CoreDataClass.swift"; path = "Model/Service+CoreDataClass.swift"; sourceTree = "<group>"; };
+		96330C4E1D907BB1008ECEE4 /* Service+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Service+CoreDataProperties.swift"; path = "Model/Service+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96330C4F1D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subcategory+CoreDataClass.swift"; path = "Model/Subcategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		96330C501D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subcategory+CoreDataProperties.swift"; path = "Model/Subcategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		969F1DDF1D2945AC006B6700 /* iGov.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iGov.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,12 +110,12 @@
 		96330C001D8FFF80008ECEE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				96330C3E1D9000AC008ECEE4 /* Service+CoreDataClass.swift */,
-				96330C3F1D9000AC008ECEE4 /* Service+CoreDataProperties.swift */,
-				96330C401D9000AC008ECEE4 /* Category+CoreDataClass.swift */,
-				96330C411D9000AC008ECEE4 /* Category+CoreDataProperties.swift */,
-				96330C421D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift */,
-				96330C431D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift */,
+				96330C4B1D907BB1008ECEE4 /* Category+CoreDataClass.swift */,
+				96330C4C1D907BB1008ECEE4 /* Category+CoreDataProperties.swift */,
+				96330C4D1D907BB1008ECEE4 /* Service+CoreDataClass.swift */,
+				96330C4E1D907BB1008ECEE4 /* Service+CoreDataProperties.swift */,
+				96330C4F1D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift */,
+				96330C501D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -243,16 +243,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96330C531D907BB1008ECEE4 /* Category+CoreDataProperties.swift in Sources */,
 				960A99441D290F8000972C18 /* Networking.swift in Sources */,
+				96330C571D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */,
+				96330C521D907BB1008ECEE4 /* Category+CoreDataClass.swift in Sources */,
+				96330C541D907BB1008ECEE4 /* Service+CoreDataClass.swift in Sources */,
+				96330C551D907BB1008ECEE4 /* Service+CoreDataProperties.swift in Sources */,
 				969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */,
-				96330C481D9000AC008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */,
-				96330C461D9000AC008ECEE4 /* Category+CoreDataClass.swift in Sources */,
-				96330C441D9000AC008ECEE4 /* Service+CoreDataClass.swift in Sources */,
-				96330C451D9000AC008ECEE4 /* Service+CoreDataProperties.swift in Sources */,
-				96330C471D9000AC008ECEE4 /* Category+CoreDataProperties.swift in Sources */,
 				960A99321D290E7F00972C18 /* ViewController.swift in Sources */,
+				96330C561D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */,
 				960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */,
-				96330C491D9000AC008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
