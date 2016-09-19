@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         Networking.sharedInstance.getListOfServices { (categories: [Category]) in

@@ -133,6 +133,7 @@
 				960A992A1D290E7F00972C18 /* Resources */,
 				CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */,
 				45668B2DC8329F423172E45F /* [CP] Copy Pods Resources */,
+				96330C581D907C59008ECEE4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -205,6 +206,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGov/Pods-iGov-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		96330C581D907C59008ECEE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 033d28f9f27e1a48ba121064fd10466ad7225b85 7d2d4a6abbcb6555bd1906bef3ff183ec3fb9bbc143d26d502f796aef3910d3c";
 		};
 		CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -371,7 +385,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iGov/Info.plist;
@@ -387,7 +401,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iGov/Info.plist;

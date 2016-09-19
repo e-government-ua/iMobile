@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.0.0)
+  - Crashlytics (3.8.1):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.8)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
@@ -7,6 +10,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Crashlytics
+  - Fabric
   - MagicalRecord
   - SwiftyJSON (from `https://github.com/appsailor/SwiftyJSON.git`, branch `swift3`)
 
@@ -22,9 +27,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  Crashlytics: 4391d8df0b125345e9f209c5db6e7f40a6a8435d
+  Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
 
-PODFILE CHECKSUM: 15c7e11bfe9d4bf27edfaad4b3de02e3d18e71f0
+PODFILE CHECKSUM: ccaec477a80d8ebd446013ffe0af0fe6d0917b97
 
 COCOAPODS: 1.1.0.rc.2
