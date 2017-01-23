@@ -19,6 +19,7 @@
 		96330C551D907BB1008ECEE4 /* Service+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C4E1D907BB1008ECEE4 /* Service+CoreDataProperties.swift */; };
 		96330C561D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C4F1D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift */; };
 		96330C571D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C501D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift */; };
+		969617661E360EAF00F399BC /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969617651E360EAF00F399BC /* Icons.xcassets */; };
 		969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */; };
 		C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		96330C4E1D907BB1008ECEE4 /* Service+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Service+CoreDataProperties.swift"; path = "Model/Service+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		96330C4F1D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subcategory+CoreDataClass.swift"; path = "Model/Subcategory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		96330C501D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subcategory+CoreDataProperties.swift"; path = "Model/Subcategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		969617651E360EAF00F399BC /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		969F1DDF1D2945AC006B6700 /* iGov.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iGov.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				960A99381D290E7F00972C18 /* LaunchScreen.storyboard */,
 				960A993B1D290E7F00972C18 /* Info.plist */,
 				960A99431D290F8000972C18 /* Networking.swift */,
+				969617651E360EAF00F399BC /* Icons.xcassets */,
 			);
 			path = iGov;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */,
 				960A99371D290E7F00972C18 /* Assets.xcassets in Resources */,
+				969617661E360EAF00F399BC /* Icons.xcassets in Resources */,
 				960A99351D290E7F00972C18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
