@@ -1,3 +1,4 @@
 osx_image: xcode8.2
 language: objective-c
 xcode_workspace: iGov.xcworkspace
+xcode_scheme: iGov
