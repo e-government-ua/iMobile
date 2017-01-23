@@ -100,11 +100,11 @@
 				969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */,
 				960A992F1D290E7F00972C18 /* AppDelegate.swift */,
 				960A99311D290E7F00972C18 /* ViewController.swift */,
+				960A99431D290F8000972C18 /* Networking.swift */,
 				960A99331D290E7F00972C18 /* Main.storyboard */,
 				960A99361D290E7F00972C18 /* Assets.xcassets */,
 				960A99381D290E7F00972C18 /* LaunchScreen.storyboard */,
 				960A993B1D290E7F00972C18 /* Info.plist */,
-				960A99431D290F8000972C18 /* Networking.swift */,
 				969617651E360EAF00F399BC /* Icons.xcassets */,
 			);
 			path = iGov;
