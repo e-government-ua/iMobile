@@ -4,10 +4,13 @@ xcode_workspace: iGov.xcworkspace
 xcode_scheme: iGov
 xcode_sdk: iphonesimulator10.2
 before_install:
-  - gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-  - brew update
-  - brew install xctool
+- gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+- brew update
+- brew install xctool
 install:
-  - rvm get stable
+- rvm get stable
 script:
-  - xctool  -workspace iGov.xcworkspace -scheme iGov -sdk iphonesimulator10.2 run-tests
+- xctool  -workspace iGov.xcworkspace -scheme iGov -sdk iphonesimulator10.2 run-tests
+notifications:
+  slack:
+    secure: YUp/Vy1H+ob6M+jmWmHui5zCAX11sT3fvZuLqI609l2xbm/z9xZgO4YIsL9VOUmioZjAqeCY086qO/CSqGw628/AqXihfwe99g5xqcd0pmvrrIR5kj+k+fb6Yiapg2FAjqbt53rPjnm/s6712uwMfJ5g0EzpK3yoz8Zy3QbDdqI3ko8IxqOL8CpnhBwKqlIYE0FuCBFYj0F/pG4jUs2y18ouJFrmfkHxEm+8uyAa77Ul82cmYrzdx53vsThbFHFe/lsJP8iZDtv3D5J29b8O6tZrf44nHed98MEI1eZtSLUQoNAnUDorXyPDD1thprxhn/qk66+b7bxr4PSYyVXqLNsaVQ1iHqi1CZxnAm4aVlRHctx2MIZXQ5Av5xQpcD8bbBU8ubr/RhZBemv1AOkuBD3oXVpcb1sN71TQv70F4v44HVSjwQW0KP8SxdMiknwYUc4OuOUm+AvPsUeS6OCvD/O6ECbTCJyo69Zs0axwQsEpe36tiv9jY2s5GCi0OYscN23vYJ71RZX0aG9Z7FpFii9aEA5bGnGBAUAPn7xmoefTN5O7rVHjLy8fNJVt9b6PSy9SkfUR2ZiI/58wojtCc+wraOPHowSzayY+twjO/0lmgVeDWwRRaoXm0RatauLlnKVsBrGjqhSp1AMojW0qbAIKzwIL4VhFrHz2PV03pGA=
