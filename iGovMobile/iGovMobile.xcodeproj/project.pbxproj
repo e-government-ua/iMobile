@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A252BB6E1BEAA72F00591F19 /* IGMBanksListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A252BB6D1BEAA72F00591F19 /* IGMBanksListCollectionViewCell.m */; };
+		A2E65CA51BEA9F2D00E26D37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E65CA41BEA9F2D00E26D37 /* main.m */; };
+		A2E65CA81BEA9F2D00E26D37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E65CA71BEA9F2D00E26D37 /* AppDelegate.m */; };
+		A2E65CB11BEA9F2D00E26D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E65CAF1BEA9F2D00E26D37 /* Main.storyboard */; };
+		A2E65CB31BEA9F2D00E26D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E65CB21BEA9F2D00E26D37 /* Assets.xcassets */; };
+		A2E65CB61BEA9F2D00E26D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E65CB41BEA9F2D00E26D37 /* LaunchScreen.storyboard */; };
+		A2E65CC01BEAA43700E26D37 /* IGMBanksListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E65CBF1BEAA43700E26D37 /* IGMBanksListCollectionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A252BB6C1BEAA72F00591F19 /* IGMBanksListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGMBanksListCollectionViewCell.h; sourceTree = "<group>"; };
+		A252BB6D1BEAA72F00591F19 /* IGMBanksListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGMBanksListCollectionViewCell.m; sourceTree = "<group>"; };
+		A2E65CA01BEA9F2D00E26D37 /* iGovMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGovMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E65CA41BEA9F2D00E26D37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2E65CA61BEA9F2D00E26D37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2E65CA71BEA9F2D00E26D37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2E65CB01BEA9F2D00E26D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2E65CB21BEA9F2D00E26D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2E65CB51BEA9F2D00E26D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2E65CB71BEA9F2D00E26D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E65CBE1BEAA43700E26D37 /* IGMBanksListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGMBanksListCollectionViewController.h; sourceTree = "<group>"; };
+		A2E65CBF1BEAA43700E26D37 /* IGMBanksListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGMBanksListCollectionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2E65C9D1BEA9F2D00E26D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A252BB6B1BEAA70B00591F19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A252BB6C1BEAA72F00591F19 /* IGMBanksListCollectionViewCell.h */,
+				A252BB6D1BEAA72F00591F19 /* IGMBanksListCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A252BB6F1BEAAB9600591F19 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A2E65CAF1BEA9F2D00E26D37 /* Main.storyboard */,
+				A2E65CB41BEA9F2D00E26D37 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		A2E65C971BEA9F2D00E26D37 = {
+			isa = PBXGroup;
+			children = (
+				A2E65CA21BEA9F2D00E26D37 /* iGovMobile */,
+				A2E65CA11BEA9F2D00E26D37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2E65CA11BEA9F2D00E26D37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2E65CA01BEA9F2D00E26D37 /* iGovMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2E65CA21BEA9F2D00E26D37 /* iGovMobile */ = {
+			isa = PBXGroup;
+			children = (
+				A2E65CA61BEA9F2D00E26D37 /* AppDelegate.h */,
+				A2E65CA71BEA9F2D00E26D37 /* AppDelegate.m */,
+				A252BB6B1BEAA70B00591F19 /* Views */,
+				A2E65CBD1BEAA3FF00E26D37 /* Controllers */,
+				A252BB6F1BEAAB9600591F19 /* Storyboards */,
+				A2E65CB21BEA9F2D00E26D37 /* Assets.xcassets */,
+				A2E65CB71BEA9F2D00E26D37 /* Info.plist */,
+				A2E65CA31BEA9F2D00E26D37 /* Supporting Files */,
+			);
+			path = iGovMobile;
+			sourceTree = "<group>";
+		};
+		A2E65CA31BEA9F2D00E26D37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2E65CA41BEA9F2D00E26D37 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2E65CBD1BEAA3FF00E26D37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2E65CBE1BEAA43700E26D37 /* IGMBanksListCollectionViewController.h */,
+				A2E65CBF1BEAA43700E26D37 /* IGMBanksListCollectionViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2E65C9F1BEA9F2D00E26D37 /* iGovMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E65CBA1BEA9F2D00E26D37 /* Build configuration list for PBXNativeTarget "iGovMobile" */;
+			buildPhases = (
+				A2E65C9C1BEA9F2D00E26D37 /* Sources */,
+				A2E65C9D1BEA9F2D00E26D37 /* Frameworks */,
+				A2E65C9E1BEA9F2D00E26D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iGovMobile;
+			productName = iGovMobile;
+			productReference = A2E65CA01BEA9F2D00E26D37 /* iGovMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2E65C981BEA9F2D00E26D37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IGM;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = iGov;
+				TargetAttributes = {
+					A2E65C9F1BEA9F2D00E26D37 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = A2E65C9B1BEA9F2D00E26D37 /* Build configuration list for PBXProject "iGovMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2E65C971BEA9F2D00E26D37;
+			productRefGroup = A2E65CA11BEA9F2D00E26D37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2E65C9F1BEA9F2D00E26D37 /* iGovMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2E65C9E1BEA9F2D00E26D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E65CB61BEA9F2D00E26D37 /* LaunchScreen.storyboard in Resources */,
+				A2E65CB31BEA9F2D00E26D37 /* Assets.xcassets in Resources */,
+				A2E65CB11BEA9F2D00E26D37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2E65C9C1BEA9F2D00E26D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A252BB6E1BEAA72F00591F19 /* IGMBanksListCollectionViewCell.m in Sources */,
+				A2E65CA81BEA9F2D00E26D37 /* AppDelegate.m in Sources */,
+				A2E65CC01BEAA43700E26D37 /* IGMBanksListCollectionViewController.m in Sources */,
+				A2E65CA51BEA9F2D00E26D37 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2E65CAF1BEA9F2D00E26D37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2E65CB01BEA9F2D00E26D37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2E65CB41BEA9F2D00E26D37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2E65CB51BEA9F2D00E26D37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2E65CB81BEA9F2D00E26D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2E65CB91BEA9F2D00E26D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2E65CBB1BEA9F2D00E26D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iGovMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.org.igov.iGovMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A2E65CBC1BEA9F2D00E26D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iGovMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.org.igov.iGovMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2E65C9B1BEA9F2D00E26D37 /* Build configuration list for PBXProject "iGovMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E65CB81BEA9F2D00E26D37 /* Debug */,
+				A2E65CB91BEA9F2D00E26D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2E65CBA1BEA9F2D00E26D37 /* Build configuration list for PBXNativeTarget "iGovMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E65CBB1BEA9F2D00E26D37 /* Debug */,
+				A2E65CBC1BEA9F2D00E26D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2E65C981BEA9F2D00E26D37 /* Project object */;
+}
