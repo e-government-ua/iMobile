@@ -6,32 +6,25 @@ PODS:
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
-  - SwiftyJSON (3.0.0)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
   - Crashlytics
   - Fabric
   - MagicalRecord
-  - SwiftyJSON (from `https://github.com/appsailor/SwiftyJSON.git`, branch `swift3`)
-
-EXTERNAL SOURCES:
-  SwiftyJSON:
-    :branch: swift3
-    :git: https://github.com/appsailor/SwiftyJSON.git
-
-CHECKOUT OPTIONS:
-  SwiftyJSON:
-    :commit: de73429b38b8994f614fb27c5ec094bb8a4833f2
-    :git: https://github.com/appsailor/SwiftyJSON.git
+  - SnapKit
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
-  SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: ccaec477a80d8ebd446013ffe0af0fe6d0917b97
+PODFILE CHECKSUM: 00c28cc3c6524d953392cd1b836340ab8796bd49
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

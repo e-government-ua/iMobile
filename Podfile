@@ -1,12 +1,13 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '9.3'
 
 target 'iGov' do
   use_frameworks!
 
   pod 'Alamofire'
-  pod 'SwiftyJSON', :git => 'https://github.com/appsailor/SwiftyJSON.git', :branch => 'swift3'
+  pod 'SwiftyJSON'
   pod 'MagicalRecord'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'SnapKit'
 end
