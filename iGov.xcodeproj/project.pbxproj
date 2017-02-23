@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151BEC8F1E5EFFEF007CE56C /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151BEC8D1E5EFFEF007CE56C /* LoginTableViewController.swift */; };
+		151BEC901E5EFFEF007CE56C /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151BEC8E1E5EFFEF007CE56C /* TextFieldTableViewCell.swift */; };
+		1584044D1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584044C1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift */; };
+		1584044F1E5F070900D9D4B1 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584044E1E5F070900D9D4B1 /* ButtonTableViewCell.swift */; };
 		960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A992F1D290E7F00972C18 /* AppDelegate.swift */; };
-		960A99321D290E7F00972C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99311D290E7F00972C18 /* ViewController.swift */; };
-		960A99351D290E7F00972C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99331D290E7F00972C18 /* Main.storyboard */; };
 		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
 		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
 		960A99441D290F8000972C18 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A99431D290F8000972C18 /* Networking.swift */; };
@@ -25,13 +27,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151BEC8D1E5EFFEF007CE56C /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		151BEC8E1E5EFFEF007CE56C /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		1584044C1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankSelectorTableViewCell.swift; sourceTree = "<group>"; };
+		1584044E1E5F070900D9D4B1 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.debug.xcconfig"; sourceTree = "<group>"; };
 		3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iGov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.release.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.release.xcconfig"; sourceTree = "<group>"; };
 		960A992C1D290E7F00972C18 /* iGov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960A992F1D290E7F00972C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		960A99311D290E7F00972C18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		960A99341D290E7F00972C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		960A99361D290E7F00972C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960A99391D290E7F00972C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		960A993B1D290E7F00972C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +103,15 @@
 				96330C001D8FFF80008ECEE4 /* Model */,
 				969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */,
 				960A992F1D290E7F00972C18 /* AppDelegate.swift */,
-				960A99311D290E7F00972C18 /* ViewController.swift */,
 				960A99431D290F8000972C18 /* Networking.swift */,
-				960A99331D290E7F00972C18 /* Main.storyboard */,
 				960A99361D290E7F00972C18 /* Assets.xcassets */,
 				960A99381D290E7F00972C18 /* LaunchScreen.storyboard */,
 				960A993B1D290E7F00972C18 /* Info.plist */,
 				969617651E360EAF00F399BC /* Icons.xcassets */,
+				151BEC8D1E5EFFEF007CE56C /* LoginTableViewController.swift */,
+				151BEC8E1E5EFFEF007CE56C /* TextFieldTableViewCell.swift */,
+				1584044C1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift */,
+				1584044E1E5F070900D9D4B1 /* ButtonTableViewCell.swift */,
 			);
 			path = iGov;
 			sourceTree = "<group>";
@@ -189,7 +195,6 @@
 				960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */,
 				960A99371D290E7F00972C18 /* Assets.xcassets in Resources */,
 				969617661E360EAF00F399BC /* Icons.xcassets in Resources */,
-				960A99351D290E7F00972C18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,13 +268,16 @@
 			files = (
 				96330C531D907BB1008ECEE4 /* Category+CoreDataProperties.swift in Sources */,
 				960A99441D290F8000972C18 /* Networking.swift in Sources */,
+				1584044F1E5F070900D9D4B1 /* ButtonTableViewCell.swift in Sources */,
 				96330C571D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */,
+				151BEC901E5EFFEF007CE56C /* TextFieldTableViewCell.swift in Sources */,
 				96330C521D907BB1008ECEE4 /* Category+CoreDataClass.swift in Sources */,
+				151BEC8F1E5EFFEF007CE56C /* LoginTableViewController.swift in Sources */,
 				96330C541D907BB1008ECEE4 /* Service+CoreDataClass.swift in Sources */,
 				96330C551D907BB1008ECEE4 /* Service+CoreDataProperties.swift in Sources */,
 				969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */,
-				960A99321D290E7F00972C18 /* ViewController.swift in Sources */,
 				96330C561D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */,
+				1584044D1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift in Sources */,
 				960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,14 +285,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		960A99331D290E7F00972C18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				960A99341D290E7F00972C18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		960A99381D290E7F00972C18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
