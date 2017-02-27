@@ -11,6 +11,8 @@
 		151BEC901E5EFFEF007CE56C /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151BEC8E1E5EFFEF007CE56C /* TextFieldTableViewCell.swift */; };
 		1584044D1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584044C1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift */; };
 		1584044F1E5F070900D9D4B1 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584044E1E5F070900D9D4B1 /* ButtonTableViewCell.swift */; };
+		158CBCE41E64538200F0BDE4 /* SMSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CBCE31E64538200F0BDE4 /* SMSTableViewController.swift */; };
+		158CBCE61E6453E000F0BDE4 /* SMSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CBCE51E6453E000F0BDE4 /* SMSTableViewCell.swift */; };
 		960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A992F1D290E7F00972C18 /* AppDelegate.swift */; };
 		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
 		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
@@ -31,6 +33,8 @@
 		151BEC8E1E5EFFEF007CE56C /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		1584044C1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankSelectorTableViewCell.swift; sourceTree = "<group>"; };
 		1584044E1E5F070900D9D4B1 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		158CBCE31E64538200F0BDE4 /* SMSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSTableViewController.swift; sourceTree = "<group>"; };
+		158CBCE51E6453E000F0BDE4 /* SMSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSTableViewCell.swift; sourceTree = "<group>"; };
 		198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.debug.xcconfig"; sourceTree = "<group>"; };
 		3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iGov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.release.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +113,9 @@
 				960A993B1D290E7F00972C18 /* Info.plist */,
 				969617651E360EAF00F399BC /* Icons.xcassets */,
 				151BEC8D1E5EFFEF007CE56C /* LoginTableViewController.swift */,
+				158CBCE31E64538200F0BDE4 /* SMSTableViewController.swift */,
 				151BEC8E1E5EFFEF007CE56C /* TextFieldTableViewCell.swift */,
+				158CBCE51E6453E000F0BDE4 /* SMSTableViewCell.swift */,
 				1584044C1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift */,
 				1584044E1E5F070900D9D4B1 /* ButtonTableViewCell.swift */,
 			);
@@ -278,7 +284,9 @@
 				969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */,
 				96330C561D907BB1008ECEE4 /* Subcategory+CoreDataClass.swift in Sources */,
 				1584044D1E5F05C100D9D4B1 /* BankSelectorTableViewCell.swift in Sources */,
+				158CBCE61E6453E000F0BDE4 /* SMSTableViewCell.swift in Sources */,
 				960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */,
+				158CBCE41E64538200F0BDE4 /* SMSTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
