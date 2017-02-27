@@ -47,8 +47,6 @@ class LoginTableViewController: UITableViewController {
         }
     }
     
-    
-    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if (section == 0){
             return 50
@@ -91,13 +89,20 @@ class LoginTableViewController: UITableViewController {
                 return cell
             }
             else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: ButtonTableViewCell.reuseIdentifier(), for: indexPath)
+                let cell = tableView.dequeueReusableCell(withIdentifier: ButtonTableViewCell.reuseIdentifier(), for: indexPath) as! ButtonTableViewCell
+                cell.button.addTarget(self, action: #selector(showNextScreen), for: .touchUpInside)
                 return cell
+                
             }
         default:
             return tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier(), for: indexPath)
         }
         
+    }
+    
+    func showNextScreen(){
+        let nextController = SMSTableViewController()
+        self.navigationController?.pushViewController(nextController, animated: true)
     }
     
 }

@@ -18,18 +18,37 @@ class SMSTableViewCell: UITableViewCell {
     }
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        let offset:CGFloat = 15.0
+        let fieldWidth = (self.bounds.size.width-CGFloat(smsdigits+1)*offset)/CGFloat(smsdigits)
+        let container = UIView()
+        self.addSubview(container)
+        container.snp.makeConstraints { (make) in
+            make.width.equalTo(CGFloat(smsdigits)*fieldWidth + CGFloat(smsdigits + 1)*offset)
+            make.top.bottom.equalTo(self)
+            make.centerX.equalTo(self)
+        }
 //        var i : Int
-        for i in 0...smsdigits-1{
+        for i in 1...smsdigits{
             let textField = UITextField()
+            textField.keyboardType = .numberPad
             textFields.append(textField)
-            self.addSubview(textField);
+            container.addSubview(textField);
+            textField.backgroundColor = UIColor.red
             textField.snp.makeConstraints({ (make) in
-                let offset = 10.0
-                make.left.equalTo(Double(i) * offset);
-                make.width.equalTo(self.bounds.size.width/Double(smsdigits) - offset*Double(smsdigits + 1))
+                make.left.equalTo(CGFloat(i - 1)*fieldWidth+CGFloat(i)*offset)
+                
+                make.width.equalTo(fieldWidth)
+                make.centerY.height.equalTo(self)
             });
         }
-        
+    }
+    func numberfromSMSCode () -> String {
+        var result : String = ""
+        for field in textFields
+        {
+            result += field.text!
+        }
+        return result
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,6 +60,9 @@ class SMSTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    class func reuseIdentifier() -> String{
+        return "SMSTableViewCell"
     }
 
 }

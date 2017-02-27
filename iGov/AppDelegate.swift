@@ -18,7 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         MagicalRecord.setupCoreDataStackWithInMemoryStore()
         Fabric.with([Crashlytics.self])
-        let nav = UINavigationController.init(rootViewController:LoginTableViewController.init(style: .grouped))
+
+        //This is list of View Controllers
+        
+         let nav = UINavigationController.init(rootViewController:LoginTableViewController.init(style: .grouped))
+//        let nav = UINavigationController.init(rootViewController:SMSTableViewController.init(style: .grouped))
+        
         self.window = UIWindow()
         if let window = self.window {
             window.rootViewController = nav
