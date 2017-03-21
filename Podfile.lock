@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (4.3.0)
-  - Crashlytics (3.8.3):
+  - Alamofire (4.4.0)
+  - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.11)
   - MagicalRecord (2.3.2):
@@ -18,8 +18,8 @@ DEPENDENCIES:
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
