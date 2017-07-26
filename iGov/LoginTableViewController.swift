@@ -14,11 +14,11 @@ class LoginTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.register(BankSelectorTableViewCell.self,
-                                forCellReuseIdentifier:BankSelectorTableViewCell.reuseIdentifier())
+                                forCellReuseIdentifier:BankSelectorTableViewCell.reuseIdentifier)
         self.tableView.register(TextFieldTableViewCell.self,
-                                forCellReuseIdentifier:TextFieldTableViewCell.reuseIdentifier())
+                                forCellReuseIdentifier:TextFieldTableViewCell.reuseIdentifier)
         self.tableView.register(ButtonTableViewCell.self,
-                                forCellReuseIdentifier:ButtonTableViewCell.reuseIdentifier())
+                                forCellReuseIdentifier:ButtonTableViewCell.reuseIdentifier)
         
         //Here we should register new cell
 //        self.tableView.style = .grouped
@@ -78,24 +78,24 @@ class LoginTableViewController: UITableViewController {
         
         switch indexPath.section {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: BankSelectorTableViewCell.reuseIdentifier(), for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: BankSelectorTableViewCell.reuseIdentifier, for: indexPath)
             cell.textLabel?.text = "Privatbank"
             cell.accessoryType = .disclosureIndicator
             return cell
         case 1:
             if (indexPath.row < 2)
             {
-                let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier(), for: indexPath)
+                let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath)
                 return cell
             }
             else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: ButtonTableViewCell.reuseIdentifier(), for: indexPath) as! ButtonTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: ButtonTableViewCell.reuseIdentifier, for: indexPath) as! ButtonTableViewCell
                 cell.button.addTarget(self, action: #selector(showNextScreen), for: .touchUpInside)
                 return cell
                 
             }
         default:
-            return tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier(), for: indexPath)
+            return tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath)
         }
         
     }

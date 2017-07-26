@@ -9,7 +9,7 @@
 import UIKit
 
 class BankSelectorTableViewCell: UITableViewCell {
-
+    static let kReuseID = "BankSelectorTableViewCell"
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,8 +20,9 @@ class BankSelectorTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    class func reuseIdentifier() -> String{
-        return "BankSelectorTableViewCell"
+    
+    class var reuseIdentifier: String {
+        return kReuseID
     }
 
 }

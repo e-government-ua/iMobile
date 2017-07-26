@@ -9,13 +9,14 @@
 import UIKit
 
 class SMSTableViewCell: UITableViewCell {
-    lazy var textFields = [UITextField]()
+    static let kReuseID = "SMSTableViewCell"
+    var textFields = [UITextField]()
     let smsdigits = 6
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         let offset:CGFloat = 15.0
@@ -27,7 +28,6 @@ class SMSTableViewCell: UITableViewCell {
             make.top.bottom.equalTo(self)
             make.centerX.equalTo(self)
         }
-//        var i : Int
         for i in 1...smsdigits{
             let textField = UITextField()
             textField.keyboardType = .numberPad
@@ -55,14 +55,13 @@ class SMSTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-    class func reuseIdentifier() -> String{
-        return "SMSTableViewCell"
+    
+    class var reuseIdentifier: String{
+        return kReuseID
     }
-
 }

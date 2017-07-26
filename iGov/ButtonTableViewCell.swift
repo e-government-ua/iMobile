@@ -9,10 +9,9 @@
 import UIKit
 
 class ButtonTableViewCell: UITableViewCell {
-
-    lazy var button = UIButton()
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        
+    static let kReuseID = "ButtonTableViewCell"
+    var button = UIButton()
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {        
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.addSubview(button)
         button.snp.makeConstraints { (make) in
@@ -33,8 +32,9 @@ class ButtonTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    class func reuseIdentifier() -> String{
-        return "ButtonTableViewCell"
+    
+    class var reuseIdentifier: String {
+        return kReuseID
     }
 
 }

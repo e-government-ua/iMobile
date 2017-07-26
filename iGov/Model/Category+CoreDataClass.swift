@@ -12,20 +12,19 @@ import SwiftyJSON
 
 @objc(Category)
 public class Category: NSManagedObject {
-    class func create(_ context: NSManagedObjectContext, nID: Int, sName: String, sID: String, nOrder: Int, aSubcategory: [JSON]) -> Category?
+    class func create(_ context: NSManagedObjectContext, nID: NSNumber, sName: String, sID: String, nOrder: NSNumber, aSubcategory: [JSON]) -> Category?
     {
         if let category = Category.mr_createEntity(in: context) {
-            category.nID = nID as NSNumber?
+            category.nID = nID
             category.sName = sName
             category.sID = sID
-            category.nOrder = nOrder as NSNumber?
+            category.nOrder = nOrder
             let subcategories = Subcategory.parse(context, category: category, jsonArray: aSubcategory)
             
             category.addToSubcategories(NSSet(array:subcategories))
             return category
         }
         return nil
-        
     }
     
     class func parse(_ context: NSManagedObjectContext, jsonArray: [JSON]) -> [Category] {
@@ -34,10 +33,10 @@ public class Category: NSManagedObject {
         for element in jsonArray {
             if let category = element.dictionary {
                 guard
-                    let nID = category["nID"]?.int,
+                    let nID = category["nID"]?.number,
                     let sName = category["sName"]?.string,
                     let sID = category["sID"]?.string,
-                    let nOrder = category["nOrder"]?.int,
+                    let nOrder = category["nOrder"]?.number,
                     let subcategories = category["aSubcategory"]?.array
                     else {
                         continue
@@ -50,5 +49,4 @@ public class Category: NSManagedObject {
         }
         return resultArray
     }
-
 }
