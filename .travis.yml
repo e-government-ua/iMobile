@@ -4,7 +4,7 @@ xcode_workspace: iGov.xcworkspace
 xcode_scheme: iGov
 xcode_sdk: iphonesimulator10.2
 before_install:
-#- gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+- gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 #- brew update
 #- brew install xctool
 install:
