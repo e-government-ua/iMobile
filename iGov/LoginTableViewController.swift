@@ -100,7 +100,7 @@ class LoginTableViewController: UITableViewController {
         
     }
     
-    func showNextScreen(){
+    @objc func showNextScreen(){
         let nextController = SMSTableViewController()
         self.navigationController?.pushViewController(nextController, animated: true)
     }
