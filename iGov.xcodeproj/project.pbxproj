@@ -13,6 +13,7 @@
 		1584044F1E5F070900D9D4B1 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584044E1E5F070900D9D4B1 /* ButtonTableViewCell.swift */; };
 		158CBCE41E64538200F0BDE4 /* SMSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CBCE31E64538200F0BDE4 /* SMSTableViewController.swift */; };
 		158CBCE61E6453E000F0BDE4 /* SMSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CBCE51E6453E000F0BDE4 /* SMSTableViewCell.swift */; };
+		2AD20D9E6244C8EAB15D84B4 /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC01B3AE891B4A3A740D7D7 /* Pods_iGov.framework */; };
 		960A99301D290E7F00972C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A992F1D290E7F00972C18 /* AppDelegate.swift */; };
 		960A99371D290E7F00972C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A99361D290E7F00972C18 /* Assets.xcassets */; };
 		960A993A1D290E7F00972C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A99381D290E7F00972C18 /* LaunchScreen.storyboard */; };
@@ -25,7 +26,6 @@
 		96330C571D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96330C501D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift */; };
 		969617661E360EAF00F399BC /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969617651E360EAF00F399BC /* Icons.xcassets */; };
 		969F1DE01D2945AC006B6700 /* iGov.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 969F1DDE1D2945AC006B6700 /* iGov.xcdatamodeld */; };
-		C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,8 @@
 		1584044E1E5F070900D9D4B1 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		158CBCE31E64538200F0BDE4 /* SMSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSTableViewController.swift; sourceTree = "<group>"; };
 		158CBCE51E6453E000F0BDE4 /* SMSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSTableViewCell.swift; sourceTree = "<group>"; };
-		198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.debug.xcconfig"; sourceTree = "<group>"; };
-		3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iGov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.release.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.release.xcconfig"; sourceTree = "<group>"; };
+		1BC01B3AE891B4A3A740D7D7 /* Pods_iGov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iGov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57085EAE91551366F7CF0E03 /* Pods-iGov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.release.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.release.xcconfig"; sourceTree = "<group>"; };
 		960A992C1D290E7F00972C18 /* iGov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960A992F1D290E7F00972C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		960A99361D290E7F00972C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		96330C501D907BB1008ECEE4 /* Subcategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Subcategory+CoreDataProperties.swift"; path = "Model/Subcategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		969617651E360EAF00F399BC /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		969F1DDF1D2945AC006B6700 /* iGov.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iGov.xcdatamodel; sourceTree = "<group>"; };
+		E3CA7B4121918F0B53D2CDFE /* Pods-iGov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iGov/Pods-iGov.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,37 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4394EA30F53FAC6F3D3407E /* Pods_iGov.framework in Frameworks */,
+				2AD20D9E6244C8EAB15D84B4 /* Pods_iGov.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A8905CBFF31703C3096F326 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */,
-				872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		92A7AE8B1E8BE0F2A6690B9C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3D42CF6B87177AAF4B397001 /* Pods_iGov.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		960A99231D290E7F00972C18 = {
 			isa = PBXGroup;
 			children = (
 				960A992E1D290E7F00972C18 /* iGov */,
 				960A992D1D290E7F00972C18 /* Products */,
-				2A8905CBFF31703C3096F326 /* Pods */,
-				92A7AE8B1E8BE0F2A6690B9C /* Frameworks */,
+				CC6D697D52F94E37124BE19B /* Pods */,
+				BA7572DEABDF5810A34E3F4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +118,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		BA7572DEABDF5810A34E3F4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC01B3AE891B4A3A740D7D7 /* Pods_iGov.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC6D697D52F94E37124BE19B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3CA7B4121918F0B53D2CDFE /* Pods-iGov.debug.xcconfig */,
+				57085EAE91551366F7CF0E03 /* Pods-iGov.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,13 +142,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 960A993E1D290E7F00972C18 /* Build configuration list for PBXNativeTarget "iGov" */;
 			buildPhases = (
-				CEA6C1F9D44C97EABD18C655 /* [CP] Check Pods Manifest.lock */,
+				B8D48FA57ADDEB06C46BB85E /* [CP] Check Pods Manifest.lock */,
 				960A99281D290E7F00972C18 /* Sources */,
 				960A99291D290E7F00972C18 /* Frameworks */,
 				960A992A1D290E7F00972C18 /* Resources */,
-				CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */,
-				45668B2DC8329F423172E45F /* [CP] Copy Pods Resources */,
 				96330C581D907C59008ECEE4 /* ShellScript */,
+				7528EBFE5E8CD9A318FB1ADE /* [CP] Embed Pods Frameworks */,
+				EDCE445DDCF928215D071A8D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,35 +207,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45668B2DC8329F423172E45F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGov/Pods-iGov-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96330C581D907C59008ECEE4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 033d28f9f27e1a48ba121064fd10466ad7225b85 7d2d4a6abbcb6555bd1906bef3ff183ec3fb9bbc143d26d502f796aef3910d3c";
-		};
-		CE6F2B310534D4B543F7E9E0 /* [CP] Embed Pods Frameworks */ = {
+		7528EBFE5E8CD9A318FB1ADE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,7 +231,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGov/Pods-iGov-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEA6C1F9D44C97EABD18C655 /* [CP] Check Pods Manifest.lock */ = {
+		96330C581D907C59008ECEE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 033d28f9f27e1a48ba121064fd10466ad7225b85 7d2d4a6abbcb6555bd1906bef3ff183ec3fb9bbc143d26d502f796aef3910d3c";
+		};
+		B8D48FA57ADDEB06C46BB85E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,6 +260,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCE445DDCF928215D071A8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGov/Pods-iGov-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -419,7 +419,7 @@
 		};
 		960A993F1D290E7F00972C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 198D831181BD90BAF843EC8F /* Pods-iGov.debug.xcconfig */;
+			baseConfigurationReference = E3CA7B4121918F0B53D2CDFE /* Pods-iGov.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -438,7 +438,7 @@
 		};
 		960A99401D290E7F00972C18 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 872BCFBA2D699A2F8A776FE0 /* Pods-iGov.release.xcconfig */;
+			baseConfigurationReference = 57085EAE91551366F7CF0E03 /* Pods-iGov.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
