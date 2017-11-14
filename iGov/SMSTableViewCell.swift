@@ -19,15 +19,18 @@ class SMSTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         let offset:CGFloat = 15.0
         let fieldWidth = (self.bounds.size.width-CGFloat(smsdigits+1)*offset)/CGFloat(smsdigits)
         let container = UIView()
         self.addSubview(container)
+        
         container.snp.makeConstraints { (make) in
             make.width.equalTo(CGFloat(smsdigits)*fieldWidth + CGFloat(smsdigits + 1)*offset)
             make.top.bottom.equalTo(self)
             make.centerX.equalTo(self)
         }
+        
         for i in 1...smsdigits{
             let textField = UITextField()
             textField.keyboardType = .numberPad
@@ -42,7 +45,8 @@ class SMSTableViewCell: UITableViewCell {
             });
         }
     }
-    func numberfromSMSCode () -> String {
+    
+    func numberFromSMSCode () -> String {
         var result : String = ""
         for field in textFields
         {
@@ -53,12 +57,6 @@ class SMSTableViewCell: UITableViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     class var reuseIdentifier: String{
