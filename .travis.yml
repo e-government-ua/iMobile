@@ -1,9 +1,10 @@
-osx_image: xcode8.2
+osx_image: xcode9.3
 language: objective-c
 xcode_workspace: iGov.xcworkspace
 xcode_scheme: iGov
 xcode_sdk: iphonesimulator10.2
 before_install:
+- brew install gnupg2
 - gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 #- brew update
 #- brew install xctool
